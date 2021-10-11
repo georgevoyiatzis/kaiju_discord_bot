@@ -13,5 +13,7 @@ async def on_message(message):
         await message.channel.send(':clown:')
     elif message.content.split(' ')[0] == "!roar":
         await message.channel.send('ROAAAAAAARRRR')
+    elif message.content.split(' ')[0] == "!links":
+        await message.channel.send("Official site: https://kaijukingz.io/#/ \nOfficial OpenSea Collection: https://opensea.io/collection/kaiju-kingz \nOfficial Contract: https://etherscan.io/address/0x1685133a98e1d4fc1fe8e25b7493d186c37b6b24")
 
 client.run(TOKEN)
