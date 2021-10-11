@@ -23,5 +23,7 @@ async def on_message(message):
         guild = message.guild
         announcements_ch = guild.get_channel(announcements_ch_id)
         await message.channel.send(f"Please refer to {announcements_ch.mention}!")
+    elif message.content.split(" ")[0] == "!ode":
+        await message.channel.send('Kaiju Kings isn’t just an NFT, its a cultural reset, its the oxygen you breathe, its a lifestyle, a reason to breathe, an escape from this cruel world filled with thieves, its an art, the first gift you open on christmas, a hug from a loved one, everything you’ve ever wanted.')
 
 client.run(TOKEN)
