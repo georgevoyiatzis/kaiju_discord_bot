@@ -11,5 +11,7 @@ client = discord.Client()
 async def on_message(message):
     if message.content.split(" ")[0] == "!whitelist":
         await message.channel.send(':clown:')
+    elif message.content.split(' ')[0] == "!roar":
+        await message.channel.send('ROAAAAAAARRRR')
 
 client.run(TOKEN)
