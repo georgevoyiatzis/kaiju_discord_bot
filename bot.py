@@ -25,5 +25,6 @@ async def on_message(message):
         await message.channel.send(f"Please refer to {announcements_ch.mention}!")
     elif message.content.split(" ")[0] == "!ode":
         await message.channel.send('Kaiju Kings isn’t just an NFT, its a cultural reset, its the oxygen you breathe, its a lifestyle, a reason to breathe, an escape from this cruel world filled with thieves, its an art, the first gift you open on christmas, a hug from a loved one, everything you’ve ever wanted.')
-
+    elif message.content.split(" ")[0] == "!help":
+        await message.channel.send("**Kaiju Bot Commands:\n!roar\n!whitelist\n!opensea\n!wensale\n!ode\n!links**")
 client.run(TOKEN)
